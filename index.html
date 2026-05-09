@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UV Home — Farewell & Home Tour 🏠</title>
+  <meta name="description" content="Farewell @ UV Home — 09-05-2026 | Vettikkattiri, Pandikkad, Malappuram" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@600;700;900&family=Noto+Sans+Malayalam:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       WELCOME SPLASH SCREEN (auto-hides after 4s)
+  ============================================================ -->
+  <div id="splash" class="splash" role="dialog" aria-label="Welcome">
+    <div class="splash-geo"></div>
+    <div class="splash-inner">
+      <div class="splash-star">✦</div>
+      <p class="splash-sub">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+      <h1 class="splash-title">UV Home</h1>
+      <p class="splash-ml">Home Tour — 09 മെയ് 2026</p>
+      <div class="splash-loader">
+        <span></span><span></span><span></span>
+      </div>
+      <p class="splash-hint">സ്വാഗതം 🌙</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main" class="main hidden">
+
+    <!-- ── NAV ── -->
+    <nav class="nav" id="navbar">
+      <div class="nav-logo">🏠 UV Home</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#countdown">⏳ Countdown</a></li>
+        <li><a href="#welcome">🌿 Welcome</a></li>
+        <li><a href="#schedule">📅 Schedule</a></li>
+        <li><a href="#route">🗺️ Route</a></li>
+        <li><a href="#gallery">🖼️ Gallery</a></li>
+        <li><a href="#message">💬 Message</a></li>
+        <li><a href="#location">📍 Location</a></li>
+      </ul>
+    </nav>
+
+    <!-- ── SECTION 1: COUNTDOWN & DATE ── -->
+    <section id="countdown" class="section section-countdown">
+      <div class="geo-corner tl"></div>
+      <div class="geo-corner br"></div>
+      <div class="container">
+        <p class="today-label">📅 Today</p>
+        <p id="todayDate" class="today-date"></p>
+        <p id="istTime" class="ist-time"></p>
+
+        <div class="divider-star">✦ ✦ ✦</div>
+
+        <p class="event-label">🕌 Farewell begins in</p>
+        <div class="countdown-grid" id="countdownGrid">
+          <div class="cd-box"><span id="cd-days">--</span><label>Days</label></div>
+          <div class="cd-box"><span id="cd-hours">--</span><label>Hours</label></div>
+          <div class="cd-box"><span id="cd-mins">--</span><label>Minutes</label></div>
+          <div class="cd-box"><span id="cd-secs">--</span><label>Seconds</label></div>
+        </div>
+
+        <p class="event-date-badge">📆 09 May 2026 &nbsp;|&nbsp; 🕖 7:15 PM IST</p>
+      </div>
+    </section>
+
+    <!-- ── SECTION 2: WELCOME MESSAGE ── -->
+    <section id="welcome" class="section section-welcome">
+      <div class="container">
+        <div class="welcome-photo-wrap">
+          <img src="Home1.jpeg" alt="UV Home" class="home-hero-img" loading="lazy" />
+          <div class="photo-badge">UV Home 🏡</div>
+        </div>
+
+        <div class="welcome-card">
+          <h2 class="section-title">🌙 Farewell @ My Home</h2>
+          <p class="event-meta">
+            📍 Vettikkattiri, Pandikkad, Malappuram<br />
+            📅 Saturday — 09 May 2026 &nbsp;|&nbsp; 🕖 7:15 PM
+          </p>
+          <div class="divider-wave"></div>
+          <p class="welcome-msg-ml">
+            ശനിയാഴ്ച (09-05-2026) ന് നടക്കുന്ന എൻ്റെ വീട്ടിലെ
+            <strong>Home Tour</strong> ലേക്ക് എല്ലാവരെയും
+            <span class="highlight">സ്നേഹത്തോടെ</span> സസന്തോഷത്തോടെ
+            ക്ഷണിക്കുന്നു. 🌿
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 3: INSTRUCTIONS ── -->
+    <section id="instructions" class="section section-instructions">
+      <div class="container">
+        <h2 class="section-title">📋 Instructions</h2>
+        <ul class="instr-list">
+          <li class="instr-item reveal">
+            <span class="instr-icon">✅</span>
+            <p>പോരാനുള്ള ലീവ് കിട്ടിയിട്ടുണ്ട്. <em>(Usama Rahmani Usthad)</em></p>
+          </li>
+          <li class="instr-item reveal">
+            <span class="instr-icon">👘</span>
+            <p>വെള്ള വസ്ത്രം ധരിക്കാൻ ശ്രദ്ധിക്കുക.</p>
+          </li>
+          <li class="instr-item reveal">
+            <span class="instr-icon">⏰</span>
+            <p>സമയനിഷ്ഠ പാലിക്കാൻ ശ്രമിക്കുക.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── SECTION 4: TIME SCHEDULE ── -->
+    <section id="schedule" class="section section-schedule">
+      <div class="container">
+        <h2 class="section-title">🕐 Time Schedule</h2>
+        <p class="schedule-note">📏 From Majma'a: <strong>28 km</strong> — approx. <strong>51 minutes</strong></p>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-time">5:30 PM</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <p>🚌 മജ്മഇിൽ നിന്നും പുറപ്പെടുക</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">6:43 PM</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <p>🕌 മഗ്‌രിബ് ബാങ്ക് — നാട്ടിലെ പള്ളിയിൽ എത്തിചേരുക</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">7:10 PM</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <p>🥤 Welcome Drink</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-time">7:15 PM</div>
+            <div class="tl-dot gold"></div>
+            <div class="tl-content highlight-box">
+              <p>🌟 Moulid Start ✨</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 5: ROUTE MAP ── -->
+    <section id="route" class="section section-route">
+      <div class="container">
+        <h2 class="section-title">🗺️ Route Map</h2>
+        <p class="route-subtitle">Mancheri ➜ UV Home — Choose your path!</p>
+
+        <div class="route-cards">
+          <div class="route-card reveal">
+            <div class="route-num">01</div>
+            <div class="route-info">
+              <p class="route-name">Nellikuth Route</p>
+              <p>മഞ്ചേരി → നെല്ലികുത്ത് → UV Home</p>
+              <span class="route-tag easy">Easy to Reach ✅</span>
+            </div>
+          </div>
+
+          <div class="route-card reveal">
+            <div class="route-num">02</div>
+            <div class="route-info">
+              <p class="route-name">Pandikkad Route</p>
+              <p>മഞ്ചേരി → പാണ്ടിക്കാട് → UV Home</p>
+            </div>
+          </div>
+
+          <div class="route-card reveal">
+            <div class="route-num">03</div>
+            <div class="route-info">
+              <p class="route-name">Karayya Route</p>
+              <p>മഞ്ചേരി → പാണ്ടിക്കാട് (വണ്ടൂർ റോഡ്) → കാരായ → UV Home</p>
+            </div>
+          </div>
+
+          <div class="route-card reveal best">
+            <div class="route-num">04</div>
+            <div class="route-info">
+              <p class="route-name">Kodasheri Route ⭐</p>
+              <p>മഞ്ചേരി → പാണ്ടിക്കാട് (വണ്ടൂർ റോഡ്) → കൊടശ്ശേരി → UV Home</p>
+              <span class="route-tag best-tag">Good & Scenic Route 🌿</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Camera Warning -->
+        <div class="camera-warn reveal">
+          <p class="warn-title">⚠️ AI Camera Alert</p>
+          <p>ഈ വഴികളിൽ 2 AI ക്യാമറ ഉണ്ട്:</p>
+          <ul>
+            <li>📷 നെല്ലിപറമ്പ്, മഞ്ചേരി</li>
+            <li>📷 Pleasant Auditorium, പണ്ടിക്കാട് വണ്ടൂർ റോഡ് (Route 3 &amp; 4)</li>
+          </ul>
+          <p class="warn-small">Drive carefully! 🚗</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 6: CONTACT ── -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2 class="section-title">📞 Contact</h2>
+        <p class="contact-sub">Any doubts? Reach out! 😊</p>
+
+        <div class="contact-cards">
+          <div class="contact-card reveal">
+            <img src="uv.jpg" alt="Mohammed Uvais" class="contact-photo" loading="lazy"
+                 onerror="this.src='https://ui-avatars.com/api/?name=Uvais&background=1a6b40&color=fff&size=80'" />
+            <div class="contact-info">
+              <p class="contact-name">Mohammed Uvais A.P</p>
+              <a href="tel:+917025560027" class="contact-btn">📲 7025560027</a>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <img src="sb.jpg" alt="Muhammed Sabeeh" class="contact-photo" loading="lazy"
+                 onerror="this.src='https://ui-avatars.com/api/?name=Sabeeh&background=c8a44a&color=fff&size=80'" />
+            <div class="contact-info">
+              <p class="contact-name">Muhammed Sabeeh</p>
+              <a href="tel:+918589079299" class="contact-btn">📲 +91 85890 79299</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 7: PHOTO GALLERY ── -->
+    <section id="gallery" class="section section-gallery">
+      <div class="container">
+        <h2 class="section-title">🖼️ Photo Gallery</h2>
+        <p class="gallery-sub">Glimpses of UV Home &amp; the event 📸</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-src="Home1.jpeg">
+            <img src="Home1.jpeg" alt="UV Home View 1" loading="lazy"
+                 onerror="this.parentElement.classList.add('img-placeholder')" />
+            <div class="gallery-overlay">
+              <span>UV Home 🏡</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal" data-src="Home2.jpeg">
+            <img src="Home2.jpeg" alt="UV Home View 2" loading="lazy"
+                 onerror="this.parentElement.classList.add('img-placeholder')" />
+            <div class="gallery-overlay">
+              <span>UV Home 🌿</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal" data-src="Psr1.jpeg">
+            <img src="Psr1.jpeg" alt="Program Poster 1" loading="lazy"
+                 onerror="this.parentElement.classList.add('img-placeholder')" />
+            <div class="gallery-overlay">
+              <span>Program Poster 📋</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal" data-src="Psr2.jpeg">
+            <img src="Ps.jpeg" alt="Frame handOver Photo" loading="lazy"
+                 onerror="this.parentElement.classList.add('img-placeholder')" />
+            <div class="gallery-overlay">
+              <span>Frame handOver</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <button class="lb-close" id="lbClose">✕</button>
+        <img id="lbImg" src="" alt="Gallery" />
+      </div>
+    </section>
+
+    <!-- ── SECTION 8: MESSAGE FORM ── -->
+    <section id="message" class="section section-message">
+      <div class="container">
+        <h2 class="section-title">💬 Send a Message</h2>
+        <p class="msg-sub">നിങ്ങളുടെ reply ഞങ്ങൾക്ക് അയക്കൂ! 🌙</p>
+
+        <form id="msgForm" class="msg-form" novalidate>
+          <div class="form-group">
+            <label for="fname">👤 Name *</label>
+            <input type="text" id="fname" name="name" placeholder="Your name..." required />
+          </div>
+
+          <div class="form-group">
+            <label>🎉 വരുന്നുണ്ടോ? *</label>
+            <div class="radio-group">
+              <label class="radio-opt">
+                <input type="radio" name="attending" value="Yes" required /> ✅ Yes, വരുന്നുണ്ട്!
+              </label>
+              <label class="radio-opt">
+                <input type="radio" name="attending" value="No" /> ❌ No, വരാനാകില്ല
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fcomment">💭 Comment (Optional)</label>
+            <textarea id="fcomment" name="comment" rows="3" placeholder="Any message..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span id="btnText">📤 Send Message</span>
+          </button>
+          <p id="formMsg" class="form-feedback hidden"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── SECTION 9: LOCATION ── -->
+    <section id="location" class="section section-location">
+      <div class="container">
+        <h2 class="section-title">📍 Location</h2>
+        <p class="loc-sub">Open in Google Maps and navigate easily! 🗺️</p>
+
+        <div class="loc-cards">
+          <a href="https://maps.app.goo.gl/6RbpyQvW7fYe7Brt7?g_st=ac" target="_blank" rel="noopener" class="loc-btn reveal">
+            <span class="loc-icon">🕌</span>
+            <div>
+              <p class="loc-title">Navigate to Masjid</p>
+              <p class="loc-desc">പള്ളി — Magrib Prayer</p>
+            </div>
+            <span class="loc-arrow">→</span>
+          </a>
+
+          <a href="https://goo.gl/maps/vKNmr3Xg37eLavjY8" target="_blank" rel="noopener" class="loc-btn reveal gold-btn">
+            <span class="loc-icon">🏡</span>
+            <div>
+              <p class="loc-title">Navigate to UV Home</p>
+              <p class="loc-desc">Vettikkattiri, Pandikkad</p>
+            </div>
+            <span class="loc-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Embedded Google Map Preview -->
+        <div class="map-embed reveal">
+          <iframe
+            title="UV Home Location"
+            src="https://maps.google.com/maps?q=11.0728,76.1979&z=15&output=embed"
+            width="100%"
+            height="280"
+            style="border:0; border-radius: 16px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <a href="https://goo.gl/maps/vKNmr3Xg37eLavjY8" target="_blank" rel="noopener" class="map-open-btn">
+            🗺️ Open Full Map
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="footer-geo"></div>
+      <p class="footer-bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+      <p class="footer-title">🏠 UV Home — Farewell & Home Tour</p>
+      <p class="footer-loc">📍 Vettikkattiri, Pandikkad, Malappuram</p>
+      <p class="footer-date">📅 09 May 2026 &nbsp;|&nbsp; 🕖 7:15 PM</p>
+      <p class="footer-copy">All Are Welcome 💚 &amp;  for this special Program </p>
+    </footer>
+
+  </main>
+
+  <!-- Back to Top -->
+  <button class="back-top hidden" id="backTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
