@@ -12,7 +12,7 @@ const CONFIG = {
   eventDateTime: new Date('2026-05-09T19:15:00+05:30'), // IST 7:15 PM
 
   // 👉 Replace this with your Google Apps Script web app URL after deploying
-  googleScriptURL: 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE',
+  googleScriptURL: 'https://script.google.com/macros/s/AKfycbyeu3wcgRy3rUXaujwIbTfRRZ-SaV3xVeglyILwLgY_0h9eGAzFUfJkrn3BMHhrReQ8/exec',
 };
 
 /* ── SPLASH SCREEN ──────────────────────────────────────────── */
