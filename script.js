@@ -268,7 +268,7 @@ updateCountdown();
     }
 
     // Check if Google Script URL is configured
-    if (CONFIG.googleScriptURL === 'https://script.google.com/macros/s/AKfycbyeu3wcgRy3rUXaujwIbTfRRZ-SaV3xVeglyILwLgY_0h9eGAzFUfJkrn3BMHhrReQ8/exec') {
+    if (CONFIG.googleScriptURL === 'https://script.google.com/macros/s/AKfycbzUKBogpflxcM1vQy8dIhcoAel9n99GIerd3bLQf2cNohG598CYaMd-q5gz8mtbX38/exec') {
       // Demo mode — show success without actually submitting
       setLoading(true);
       await delay(1500);
