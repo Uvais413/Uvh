@@ -37,7 +37,7 @@ function updateClock() {
   const now = new Date();
 
   // IST = UTC+5:30
-  const ist = new Date(now.getTime() + (5.5 * 60 * 60 * 1000 - now.getTimezoneOffset() * 60 * 1000));
+  const ist = new Date(now.getTime() + (now.getTimezoneOffset() + 330) * 60 * 1000);
 
   const dateEl = document.getElementById('todayDate');
   const timeEl = document.getElementById('istTime');
